@@ -12,7 +12,7 @@ module.exports = {
       filename: 'bundle.js',
       path: path.resolve(__dirname, 'dist'), // Absolute path with .resolve
       publicPath: "./",
-      assetModuleFilename: "img/[name][ext][query]",
+      assetModuleFilename: "img/[name][ext][query]", // to compile with the same name and inside a specific folder (in dist folder)
       clean: true
     },
     module: {
