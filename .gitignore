@@ -1,2 +1,5 @@
+# dotenv environment variables
 .env
+
+# dist folder
 /dist

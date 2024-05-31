@@ -1,7 +1,8 @@
 import "../scss/style.scss";
-import axios from 'axios';
+import { getNews, getInfo } from "./api";
 
-console.log(axios.isCancel('something'));
+getNews();
+getInfo(1);
 
 /*
 
@@ -26,7 +27,7 @@ async function loadTenNews() {
   }
 }
 
-// HackerNews API - id 
+// HackerNews API - All id 
 async function getNewsId() {
     const request = 'https://hacker-news.firebaseio.com/v0/newstories.json';
     const response = await fetch(request);
@@ -36,7 +37,7 @@ async function getNewsId() {
 
 // HackerNews API - info 
 async function getInfoId(id) {
-    const request = `https://hacker-news.firebaseio.com/v0/item/${id}.json`;
+    const request = `https://hacker-news.firebaseio.com/v0/item/${id}.json`
     const response = await fetch(request);
     const infoId = await response.json();
     return infoId;
