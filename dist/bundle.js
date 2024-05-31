@@ -4015,7 +4015,7 @@ function insertArticle(obj) {
   article.appendChild(myArticle);
 }
 
-const btn = document.querySelector(".load-more");
+const btn = document.getElementById("load-more");
 btn.addEventListener("click", loadTenNews);
 
 loadTenNews();
