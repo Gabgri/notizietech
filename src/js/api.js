@@ -6,7 +6,8 @@ export async function getNews() {
     let hackerAll = new URL("v0/newstories.json", hackerUrl);
     try {
         const response = await axios.get(hackerAll);
-        console.log(response);
+        const news = await response.data;
+        return news;
       } catch (error) {
         console.error(error);
       }
@@ -16,7 +17,8 @@ export async function getInfo(id) {
     let hackerId = new URL(`v0/item/${id}.json`, hackerUrl);
     try {
         const response = await axios.get(hackerId);
-        console.log(response);
+        const info = await response.data;
+        return info;
       } catch (error) {
         console.error(error);
       }
