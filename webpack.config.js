@@ -20,6 +20,7 @@ module.exports = {
         rules: [
           {
             test: /\.s[ac]ss$/i,
+            include: path.resolve(__dirname, 'src'),
             use: [
               // Creates `style` nodes from JS strings
               //"style-loader",
@@ -28,6 +29,7 @@ module.exports = {
               "css-loader",
               // Compiles Sass to CSS
               "sass-loader",
+              "postcss-loader"
             ],
           },
           {
