@@ -11,26 +11,18 @@
     </head>
 
     <body>
-        <header class="fixed top-0 left-1/2 -translate-x-1/2 bg-slate-100 w-[340px] rounded-lg m-auto">
-            <div class="max-w-80 m-auto">
-                <h1 class="text-center">Last Tech News</h1>
-                <!--Dynamic Progress Bar-->
-                <div class="h-3 mb-1 flex bg-gray-200">
-                    <div id="progress-one" style="width: 10%" class=" bg-blue-200"></div>
-                    <div id="progress-two" style="width: 10%" class=" bg-blue-300"></div>
-                    <div id="progress-three" style="width: 10%" class=" bg-blue-400"></div>
-                    <div id="progress-four" style="width: 10%" class=" bg-blue-500"></div>
-                    <div id="progress-five" style="width: 10%" class=" bg-blue-600"></div>
-                    <div id="progress-six" style="width: 10%" class=" bg-indigo-600"></div>
-                    <div id="progress-seven" style="width: 10%" class=" bg-indigo-700"></div>
-                    <div id="progress-eight" style="width: 10%" class=" bg-indigo-800"></div>
-                    <div id="progress-nine" style="width: 10%" class=" bg-indigo-900"></div>
-                    <div id="progress-ten" style="width: 10%" class=" bg-slate-700"></div>
-                </div>           
+        <header class="fixed top-0 left-1/2 -translate-x-1/2 bg-slate-100 min-w-[320px] rounded-lg m-auto">
+            
+            <h1 class="text-center">Last Tech News</h1>
+
+            <!--Dynamic Progress Bar-->
+            <div class="h-3 flex bg-gray-200 rounded-lg">
+                <div id="progress-bar" style="width:0%" class=" bg-blue-600 rounded-lg"></div>        
             </div>
 
         </header>
-        <main class="block max-w-80 mt-[65px] mx-auto">
+
+        <main class="block max-w-80 mt-[62px] mx-auto">
             <div id="news" class="m-3">  
                 <!-- Dynamic content
                     <article 1> 
@@ -42,8 +34,8 @@
             </div>  
         </main>
 
-        <div id="buttons" class="fixed bottom-2 left-1/2 -translate-x-1/2 w-[340px] flex" >
-            <button id="load-more" class="w-1/2 mr-1 text-xl font-bold bg-slate-100 hover:bg-blue-500 hover:text-white active:bg-blue-600 py-2 rounded-lg outline-none focus:outline-none ease-linear transition-all duration-150">Load more</button>
+        <div id="buttons" class="fixed bottom-2 left-1/2 -translate-x-1/2 w-[320px] flex">
+            <button id="load-more" class="text-xl w-1/2 mr-1 font-bold bg-slate-100 hover:bg-blue-500 hover:text-white active:bg-blue-600 py-2 rounded-lg outline-none focus:outline-none ease-linear transition-all duration-150">Load more</button>
         <!-- Loading button
             <button class="bg-indigo-400 h-max w-max rounded-lg text-white font-bold hover:bg-indigo-300 hover:cursor-not-allowed duration-[500ms,800ms]" disabled>
                 <div class="flex items-center justify-center m-[10px]"> 
@@ -52,7 +44,7 @@
                 </div>
             </button>
         -->
-            <button class="w-1/2 ml-1text-xl font-bold bg-slate-100 hover:bg-blue-500 hover:text-white active:bg-blue-600 py-2 rounded-lg outline-none focus:outline-none ease-linear transition-all duration-150" onclick="window.location.reload()">Reload</button>                
+            <button class="text-xl w-1/2 ml-1 font-bold bg-slate-100 hover:bg-blue-500 hover:text-white active:bg-blue-600 py-2 rounded-lg outline-none focus:outline-none ease-linear transition-all duration-150" onclick="window.location.reload()">Reload</button>                
         </div>
     </body>
 </html>

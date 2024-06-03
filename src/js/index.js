@@ -1,15 +1,15 @@
 import "../scss/style.scss";
 import { getNews, getInfo } from "./api";
 
-
-
 function formattedTime(timestamp) {
   let date = new Date(timestamp * 1000).toLocaleString();
   return date
 }
 
+let bar = 0;
 let flag = 0;
 async function loadTenNews() {
+  bar = 1;
   //let tenArticles = []; //to load all articles together
   let listId = await getNews();
   let tenId = listId.slice(flag, flag+10);
@@ -23,11 +23,12 @@ async function loadTenNews() {
     }
     //tenArticles.push(article); //to load all articles together
     insertArticle(article);
+    loadingBar(bar);
+    bar += 1;
     flag += 1;
   }
   //insertTenArticles(tenArticles); //to load all articles together
 }
-
 
 /* //to load all articles together
 function insertTenArticles(articles) {
@@ -47,10 +48,15 @@ function insertArticle(obj) {
   article.appendChild(myArticle);
 }
 
+function loadingBar(progress) {
+  let progressBar = document.getElementById("progress-bar");
+  progressBar.style.width = progress*10+"%";
+  }
 
 const btn = document.getElementById("load-more");
 btn.addEventListener("click", loadTenNews);
 
 loadTenNews();
+
 
 
