@@ -24,7 +24,7 @@
 </details>
 
 # About the project
-* Web App
+* A simple web app to receive all the latest news from the tech world.
   
 
 ## Built With
@@ -41,6 +41,6 @@
 To use this application click here <a href="https://notizietech.netlify.app">Tech-News App</a>
 
 ## Usage
-You can use this application to ...
+At the beginning the homepage will show the latest ten news from the tech world, fetched from the Hacker News API. The user can click the "load more" button to load ten additional news or the "reload" button to refresh the page.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
