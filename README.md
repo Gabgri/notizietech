@@ -44,3 +44,17 @@ To use this application click here <a href="https://notizietech.netlify.app">Tec
 At the beginning the homepage will show the latest ten news from the tech world, fetched from the Hacker News API. The user can click the "load more" button to load ten additional news or the "reload" button to refresh the page.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Author
+Gabriele Grio
+
+
+### License 
+Distributed under the MIT License.
+
+
+### Contact
+<a href="https://www.linkedin.com/in/gabriele-grio-a14323210/">Linkedin</a>
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
