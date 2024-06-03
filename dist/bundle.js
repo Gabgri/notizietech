@@ -4034,7 +4034,7 @@ function insertTenArticles(articles) {
 function insertArticle(obj) { 
   const article = document.getElementById('news');
   const myArticle = document.createElement('article');
-  myArticle.innerHTML = `<h3>${obj.title}</h3><p>${obj.time}</p><a href="${obj.link}" target="_blank">Open the article</a>`;
+  myArticle.innerHTML = `<h3>${obj.title}</h3><p>${obj.time}</p><a href="${obj.link}" target="_blank">Open</a>`;
   article.appendChild(myArticle);
 }
 
