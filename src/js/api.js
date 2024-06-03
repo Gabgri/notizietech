@@ -9,7 +9,7 @@ export async function getNews() {
         const news = await response.data;
         return news;
       } catch (error) {
-        console.error(error);
+        console.error('Error downloading the file:', error);
       }
 }
 
@@ -20,7 +20,7 @@ export async function getInfo(id) {
         const info = await response.data;
         return info;
       } catch (error) {
-        console.error(error);
+        console.error('Error downloading the file:', error);
       }
 }
 

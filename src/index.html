@@ -12,24 +12,34 @@
 
     <body>
         <header>
-            <h1>Tech News</h1>
+            <h1 class="bg-slate-100 text-center max-w-80 m-auto rounded-xl">Last Tech News</h1>
+
+            <!--Dynamic Progress Bar-->
+            <!--
+                <div> </div>
+            -->
         </header>
-        
-        <main>
-            <h2>Last News</h2>
-            <div id="news" class="">  
-                <!--LOADING BAR-->
-                <!-- Dynamic content
-                    <article> for each id 
-                        <h3>Title</h3>
-                        <a href="link">Link</a>
+        <main class="block max-w-80 m-auto">
+            <div id="news" class="m-3">  
+                <!-- Dynamic content-->
+                <!--
+                    <article 1> 
+                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, voluptatibus ex dolorem non iusto quidem voluptates quae laborum earum ea vitae cum obcaecati nemo. Reiciendis illo maxime porro ut sunt?</h3>
                         <p>Time</p>
+                        <button href="link">Link</button>
+                    </article>
+                    <article 2> 
+                        <h3 class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, voluptatibus ex dolorem non iusto quidem voluptates quae laborum earum ea vitae cum obcaecati nemo. Reiciendis illo maxime porro ut sunt?</h3>
+                        <p class="text-right m-1">Time</p>
+                        <button href="link">Link</button>
                     </article>
                 -->
             </div> 
-            <div class="container text-center">
-                <button id="load-more" class="">Load more</button>
-                <button class="" onclick="window.location.reload()">Reload</button>
+            <div id="buttons" class="flex justify-center m-3" >
+                <button id="load-more" class="flex mr-1 p-1 rounded-lg m">
+                    Load more</button>
+                <button class="flex ml-1 p-1 rounded-lg" onclick="window.location.reload()">
+                    Reload</button>
             </div>
         </main>
     </body>
