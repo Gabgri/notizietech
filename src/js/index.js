@@ -57,6 +57,3 @@ const btn = document.getElementById("load-more");
 btn.addEventListener("click", loadTenNews);
 
 loadTenNews();
-
-
-
