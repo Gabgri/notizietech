@@ -10,7 +10,6 @@ let bar = 0;
 let flag = 0;
 async function loadTenNews() {
   bar = 1;
-  //let tenArticles = []; //to load all articles together
   let listId = await getNews();
   let tenId = listId.slice(flag, flag+10);
   for (let i = 0; i < tenId.length; i++) {
@@ -21,25 +20,13 @@ async function loadTenNews() {
       link: infoId.url,
       time: articleDate,
     }
-    //tenArticles.push(article); //to load all articles together
     insertArticle(article);
     loadingBar(bar);
     bar += 1;
     flag += 1;
   }
-  //insertTenArticles(tenArticles); //to load all articles together
 }
 
-/* //to load all articles together
-function insertTenArticles(articles) {
-  for (let i = 0; i < articles.length; i++) {
-    const article = document.getElementById('news');
-    const myArticle = document.createElement('article');
-    myArticle.innerHTML = `<h3>${articles[i].title}</h3><p>${articles[i].time}</p><a href="${articles[i].link}" target="_blank">Open the article</a>`;
-    article.appendChild(myArticle);
-  }
-}
-*/
 
 function insertArticle(obj) { 
   const article = document.getElementById('news');
