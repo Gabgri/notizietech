@@ -27,12 +27,16 @@ async function loadTenNews() {
   }
 }
 
-
 function insertArticle(obj) { 
   const article = document.getElementById('news');
   const myArticle = document.createElement('article');
+  if (obj.link === undefined) {
+    myArticle.innerHTML = `<h3>${obj.title}</h3><p>${obj.time}</p>`;
+    article.appendChild(myArticle);
+  } else {
   myArticle.innerHTML = `<h3>${obj.title}</h3><p>${obj.time}</p><a href="${obj.link}" target="_blank">Open</a>`;
   article.appendChild(myArticle);
+  }
 }
 
 function loadingBar(progress) {
